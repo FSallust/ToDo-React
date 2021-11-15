@@ -1,0 +1,38 @@
+.formTask {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 300px 20px 50px;
+    grid-template-rows: repeat(3, 20px);
+    margin-bottom: 20px;
+}
+.inputUser {
+    display: flex;
+}
+.inputUser label {
+    min-width: 100px;
+}
+.inputUser label::after {
+    content: ' :';
+    padding-right: 3px;
+}
+.inputUser input, .inputUser textarea {
+    flex-grow: 1;
+    flex-shrink: 1;
+    resize: none;
+}
+.inputName {
+    grid-column: 1;
+    grid-row: 1;
+}
+.inputDesc {
+    grid-column: 1;
+    grid-row: 2;
+}
+.inputPrio {
+    grid-column: 1;
+    grid-row: 3;
+}
+.actionSubmit {
+    grid-column: 3;
+    grid-row: 3;
+}
